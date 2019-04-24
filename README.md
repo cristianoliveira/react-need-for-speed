@@ -1,20 +1,56 @@
-# React to the need for speed
-A talk about metrics, analyse, tools and best practices for performance optimisation in React.
+# Spectacle Boilerplate
 
-### Abstract
+## Contents
 
-Let's face a fact we don't really care that much about performance till it's too late. We work with top-notch machines with the latest CPU processor and 16GB of memory + fast internet so we don't actually experience our apps as our users do. So that page that we noticed performing badly only in the last week. **Spoiler Alert**: For the users, it has been like it since they signed up (if they did).
+- [Reference](#reference)
+- [Getting Started](#getting-started)
+- [Tutorial](#tutorial)
+- [Build & Deployment](#build-deployment)
 
-In this talk, We will discuss some of the strategies we can apply for preventing, measuring, debugging and fixing some of the most common performance issues in the react world based on real scenarios.
+## Reference
 
-### Takeaways
+The Spectacle core API is available in the [Spectacle Docs](https://github.com/FormidableLabs/spectacle/blob/master/README.md).
 
-- How did we get here?
-- When should we care about performance? Because: "Premature optimisation is the root of all evil"
-- How to approach measuring and metrics?
-- Tools for measuring and automating performance budgets.
-- Understanding the reconciliation and why bad practices hurt its algorithm
-- Best practices for React and it's relation with DOM
-- What is new on React for performance optimisation debugging
-- Real cases at SumUp. (I'll try to kill 2 birds with one stone) :D
-- Demo (Because why not?)
+## Getting Started
+
+1. Download the boilerplate
+
+   ```sh
+   git clone git@github.com:FormidableLabs/spectacle-boilerplate.git
+   ```
+
+2. Remove existing version control
+
+   ```sh
+   rm -R .git
+   ```
+
+3. Install dependencies
+
+   ```sh
+   yarn install
+   ```
+
+4. Start the webpack server. The server will run at [`localhost:3000`](http://localhost:3000).
+
+   ```sh
+   yarn start
+   ```
+
+## Tutorial
+
+If want you a step-by-step guide for getting started with Spectacle, a basic tutorial is available [here](https://github.com/FormidableLabs/spectacle/blob/master/docs/tutorial.md).
+
+## Build & Deployment
+
+Building the dist version of the project is as easy as running
+
+```sh
+yarn build
+```
+
+If you want to deploy the slideshow to surge, run
+
+```sh
+yarn deploy
+```
